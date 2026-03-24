@@ -1,100 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mindrock Global Solutions LLC</title>
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0f172a;
-    color: #e5e7eb;
-    line-height: 1.6;
-}
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 80px 20px;
-}
-h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-h2 {
-    font-size: 20px;
-    font-weight: normal;
-    color: #9ca3af;
-    margin-bottom: 40px;
-}
-p {
-    font-size: 16px;
-    color: #cbd5e1;
-}
-.section {
-    margin-bottom: 60px;
-}
-footer {
-    border-top: 1px solid #1f2937;
-    padding-top: 30px;
-    font-size: 14px;
-    color: #9ca3af;
-}
-.small-text {
-    font-size: 13px;
-    color: #6b7280;
-    margin-top: 10px;
-}
-</style>
-</head>
+  <meta charset="UTF-8" />
+  <title>Crypto Exchange Demo</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #0b1220;
+      --accent: #22c55e;
+    }
 
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--secondary);
+      color: #e5e7eb;
+    }
+
+    /* 顶部导航 */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 24px;
+      background: #111827;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    .logo {
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    .nav-btn {
+      background: transparent;
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .nav-btn:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    /* 主区域 */
+    .container {
+      padding: 40px;
+    }
+
+    .card {
+      background: #111827;
+      padding: 24px;
+      border-radius: 12px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .title {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: 1px solid #374151;
+      background: #0b1220;
+      color: white;
+    }
+
+    .btn-primary {
+      width: 100%;
+      padding: 12px;
+      background: var(--primary);
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+
+    .success {
+      margin-top: 16px;
+      color: var(--accent);
+      font-size: 14px;
+    }
+  </style>
+</head>
 <body>
 
-<div class="container">
+  <div class="navbar">
+    <div class="logo">MINDROCK</div>
+    <button class="nav-btn">登录</button>
+  </div>
 
-    <div class="section">
-        <h1>Mindrock Global Solutions LLC</h1>
-        <h2>Business and Investment Consulting</h2>
+  <div class="container">
+    <div class="card">
+      <div class="title">兑换 USDT</div>
 
-        <p>
-            Mindrock Global Solutions LLC is a United States registered company engaged in business consulting and proprietary portfolio investment activities.
-        </p>
+      <input class="input" placeholder="输入 BTC 数量" />
+      <input class="input" placeholder="输入 USDT 数量" />
 
-        <p>
-            The company utilizes shareholder capital for portfolio investments through regulated financial institutions and brokerage accounts. No third-party client funds are accepted.
-        </p>
+      <button class="btn-primary">立即兑换</button>
 
-        <p class="small-text">
-            Rocknex is a brand operated by Mindrock Global Solutions LLC.
-        </p>
+      <div class="success">✔ 当前行情上涨 +2.4%</div>
     </div>
-
-    <div class="section">
-        <h2>Our Focus</h2>
-        <p>
-            Strategic Business Advisory<br>
-            Cross-Border Consulting Support<br>
-            Proprietary Portfolio Investment Activities
-        </p>
-    </div>
-
-    <footer>
-        <p>
-            Mindrock Global Solutions LLC<br>
-            30 N Gould St Ste R, Sheridan, WY 82801, United States<br>
-            Registered in the State of Wyoming
-        </p>
-
-        <p style="margin-top:15px;">
-            Email: info@rocknex.com
-        </p>
-
-        <p style="margin-top:10px;">
-            Copyright 2026 Mindrock Global Solutions LLC. All rights reserved.
-        </p>
-    </footer>
-
-</div>
+  </div>
 
 </body>
 </html>
